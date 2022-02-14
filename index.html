@@ -165,9 +165,18 @@
       <fieldset class="form__border">
         <legend>Авторизация</legend>
         <label for="login">Логин</label>
-        <input class="form__input" id="login" type="text" placeholder="Введите ваш логин" required>
+        <input 
+        class="form__input invalid" id="login" 
+        type="text" placeholder="Введите ваш логин" required>
+        <div class="error-login">
+          <p class="error-log__text">Длина логина должна быть больше 3х</p>
+        </div>
         <label for="password">Пароль</label>
-        <input class="form__input" id="password" type="password" placeholder="Введите свой пароль" required>
+        <input class="form__input invalid" id="password" 
+        type="password" placeholder="Введите свой пароль" required>
+        <div class="error-password">
+          <p class="error-log__text">Некорректный пароль</p>
+        </div>
         <button class="form__btn" type="submit">Войти</button>
       </fieldset>
     </form>

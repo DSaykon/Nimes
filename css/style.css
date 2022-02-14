@@ -299,6 +299,26 @@ body {
   padding: 10px 20px;
 }
 
+.error-login,
+.error-password {
+  margin-bottom: 15px;
+  color: red;
+  background-color: #fff;
+}
+
+.error-log__text {
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.invalid {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
   .container {
     width: 900px;
