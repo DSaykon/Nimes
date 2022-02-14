@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="./main.js"></script>
   </head>
   <body>
     <header >
@@ -27,12 +28,13 @@
               <a class="link" href="#">Man</a>
             </li>
             <li>
-              <a class="link" href="#">New</a>
+              <a class="nav__link link" href="#">New</a>
             </li>
           </ul>
         </nav>
         <img class="logo-img" src="./img/logo.png" alt="Logo Mines" />
         <div>
+          <a href="#" class="nav__link link modal-link">User</a>
           <img src="./img/search.svg" alt="Search" />
           <img class="cart-icon" src="./img/cart.svg" alt="Cart" />
         </div>
@@ -131,5 +133,80 @@
         </div>
       </div>
 
+
+    </section>
+    <section class="shop">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Shop by category</h2>
+          <a href="#" class="section-link link">View all</a>
+        </div>
+        <div class="shop__wrapper">
+          <img src="./img/category_jeans.jpg" alt="Jeans" class="shop__img jeans-bg" />
+          <img src="./img/category_shirts.jpg" alt="Shirts" class="shop__img shirts-bg" />
+          <img src="./img/category_jackets.jpg" alt="Jackets" class="shop__img jackets-bg" />
+          <img src="./img/category_overalls.jpg" alt="Overalls" class="shop__img overalls-bg" />
+          <a href="#" class="link">
+            <span class="category-title jeans-title">Jeans</span>
+          </a>
+          <a href="#" class="link">
+            <span class="category-title shirts-title">Shirts</span>
+          </a>
+          <a href="#" class="link">
+            <span class="category-title jackets-title">Jackets</span>
+          </a>
+          <a href="#" class="link">
+            <span class="category-title overalls-title">Overalls</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <form action="send.html" class="form">
+      <fieldset class="form__border">
+        <legend>Авторизация</legend>
+        <label for="login">Логин</label>
+        <input class="form__input" id="login" type="text" placeholder="Введите ваш логин" required>
+        <label for="password">Пароль</label>
+        <input class="form__input" id="password" type="password" placeholder="Введите свой пароль" required>
+        <button class="form__btn" type="submit">Войти</button>
+      </fieldset>
+    </form>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="index.html" class="logo-link link"><img src="./img/logo_white.png" alt="Start page Nimes" /></a>
+        <ul class="nav footer__list">
+          <li class="nav__item footer__item">
+            <a href="#" class="footer__link link">Shop</a>
+          </li>
+          <li class="nav__item footer__item">
+            <a href="#" class="footer__link link">Delivery</a>
+          </li>
+          <li class="nav__item footer__item">
+            <a href="#" class="footer__link link">Service</a>
+          </li>
+          <li class="nav__item footer__item">
+            <a href="#" class="footer__link link">Sitemap</a>
+          </li>
+          <li class="nav__item footer__item">
+            <a href="#" class="footer__link link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="nav social">
+          <li class="nav__item social__item">
+            <a href="https://ru-ru.facebook.com" class="social__link"><img src="./img/fb.svg" alt="Facebook"
+                class="social__logo" /></a>
+          </li>
+          <li class="nav__item social__item">
+            <a href="#" class="social__link"><img src="./img/inst.svg" alt="Instagram" class="social__logo" /></a>
+          </li>
+          <li class="nav__item social__item">
+            <a href="#" class="social__link"><img src="./img/pint.svg" alt="Pinteres" class="social__logo" /></a>
+          </li>
+          <li class="nav__item social__item">
+            <a href="#" class="social__link"><img src="./img/twitter.svg" alt="Twitter" class="social__logo" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

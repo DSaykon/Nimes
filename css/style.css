@@ -263,6 +263,42 @@ body {
   padding: 27px 45px;
 }
 
+.form {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #f1f2f4;
+  padding: 25px;
+  border-radius: 15px;
+  color: #727a82;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 20;
+}
+
+.form__border {
+  border: 3px solid #727a82;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0 5px;
+}
+
+.form__btn {
+  border: none;
+  background-color: #151c22;
+  color: white;
+  padding: 10px 20px;
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
   .container {
     width: 900px;
