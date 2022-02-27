@@ -1,3 +1,14 @@
+.loginWindow:before 
+	content: ''
+	background: #000
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	opacity: 0.9
+	z-index: 10
+
 .form
     width: 400px
     margin: 50px auto
@@ -25,13 +36,15 @@
         background-color: #151c22
         color: white
         padding: 10px 20px
+
 .error-login, 
 .error-password
     margin-bottom: 15px
     color: red
     background-color: #fff
-.error-log__text
-    margin: 0
+    font-size: 12px
+    &__text
+        margin: 0
 .hidden
     visibility: hidden
 .invalid

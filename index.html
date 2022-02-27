@@ -20,7 +20,7 @@
     <header >
       <div class="container header-wrapper">
         <nav>
-          <ul class="navigation">
+          <ul class="nav">
             <li>
               <a class="link" href="#">Woman</a>
             </li>
@@ -28,13 +28,13 @@
               <a class="link" href="#">Man</a>
             </li>
             <li>
-              <a class="nav__link link" href="#">New</a>
+              <a class="link" href="#">New</a>
             </li>
           </ul>
         </nav>
         <img class="logo-img" src="./img/logo.png" alt="Logo Mines" />
         <div>
-          <a href="#" class="nav__link link modal-link">User</a>
+          <a href="#" class="link modal-link">User</a>
           <img src="./img/search.svg" alt="Search" />
           <img class="cart-icon" src="./img/cart.svg" alt="Cart" />
         </div>
@@ -161,25 +161,27 @@
         </div>
       </div>
     </section>
-    <form action="send.html" class="form">
-      <fieldset class="form__border">
-        <legend>Авторизация</legend>
-        <label for="login">Логин</label>
-        <input 
-        class="form__input invalid" id="login" 
-        type="text" placeholder="Введите ваш логин" required>
-        <div class="error-login">
-          <p class="error-log__text">Длина логина должна быть больше 3х</p>
-        </div>
-        <label for="password">Пароль</label>
-        <input class="form__input invalid" id="password" 
-        type="password" placeholder="Введите свой пароль" required>
-        <div class="error-password">
-          <p class="error-log__text">Некорректный пароль</p>
-        </div>
-        <button class="form__btn" type="submit">Войти</button>
-      </fieldset>
-    </form>
+    <div class="loginWindow hidden">
+      <form action="send.html" class="form">
+        <fieldset class="form__border">
+          <legend>Авторизация</legend>
+          <label for="login">Логин</label>
+          <input 
+          class="form__input" id="login" 
+          type="text" placeholder="Введите ваш логин" required>
+          <div class="error-login hidden">
+            <p class="error-login__text">Длина логина должна быть больше 3-х символов</p>
+          </div>
+          <label for="password">Пароль</label>
+          <input class="form__input" id="password" 
+          type="password" placeholder="Введите свой пароль" required>
+          <div class="error-password hidden">
+            <p class="error-password__text">Допускаются символы 0-9a-zA-Z!@#$%^&*</p>
+          </div>
+          <button class="form__btn" type="submit">Войти</button>
+        </fieldset>
+      </form>
+    </div>
     <footer class="footer">
       <div class="container footer__container">
         <a href="index.html" class="logo-link link"><img src="./img/logo_white.png" alt="Start page Nimes" /></a>
